@@ -2,12 +2,14 @@
    NosefU's H4CK3R Z0N3 -- style.css
    ============================================================ */
 
-/* ---- общий фон: чёрный + кислотный тайл (заглушка, юзер заменит) ---- */
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* ---- общий фон ---- */
 body {
     background-color: #000000;
     background-image: url("assets/bg/bg-main.gif");
     color: #00ff41;
-    font-family: "Comic Sans MS", "Courier New", cursive, monospace;
+    font-family: "Comic Sans MS", "Comic Neue", "Courier New", monospace;
     font-size: 15px;
     margin: 6px;
 }
@@ -70,7 +72,7 @@ table.card td { padding: 10px; }
 /* ---- пометка [N3W!] / [0DAY] ---- */
 .new {
     color: #ff0000;
-    font-family: "Comic Sans MS", cursive;
+    font-family: "Comic Sans MS", "Comic Neue", sans-serif;
     font-weight: bold;
 }
 
@@ -91,7 +93,7 @@ hr.retro {
 /* ---- блок "понты" ---- */
 .brag {
     color: #ffff00;
-    font-family: "Comic Sans MS", cursive;
+    font-family: "Comic Sans MS", "Comic Neue", sans-serif;
     font-weight: bold;
 }
 
@@ -103,7 +105,7 @@ hr.retro {
     background-color: #001a00;
     border: 2px outset #00ff00;
     color: #00ffff;
-    font-family: "Comic Sans MS", cursive;
+    font-family: "Comic Sans MS", "Comic Neue", sans-serif;
     font-weight: bold;
     text-decoration: none;
     font-size: 14px;
