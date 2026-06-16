@@ -1,0 +1,185 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>MY H4CKZ &amp; PR0J3CTZ</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body bgcolor="#000000" text="#00ff41" link="#00ffff" vlink="#ff00ff" background="assets/bg/bg-main.gif">
+<div class="wrap">
+
+<center>
+<h2>&#9760; MY H4CKZ &amp; PR0J3CTZ &#9760;</h2>
+<img src="assets/gif/skull.gif" width="48" alt="[ЧЕРЕП]" border="0">
+<marquee behavior="alternate" scrollamount="5">
+  <font face="Comic Sans MS" color="#ff0000">100% w0rk1ng!!! n0 v1ru$ i sw34r!!! d0wnl04d n0w!!!</font>
+</marquee>
+<img src="assets/gif/skull.gif" width="48" alt="[ЧЕРЕП]" border="0">
+</center>
+
+<hr class="retro">
+
+<!-- ===== PROJ 1 ===== -->
+<table class="card" width="96%"><tr>
+<td class="cardhead">&#9658; ТГ-бот уведомлений МЧС <span class="new"><blink>[H0T!]</blink></span></td></tr>
+<tr><td align="center">
+  <img src="assets/img/projects/mchs-bot.gif" alt="[СКРИН: МЧС-бот]" border="2" style="border:2px solid #00ff00;">
+</td></tr>
+<tr><td>
+  <p>С учётом жизни в приграничном регионе, мысль пересылать уведомления о тревогах
+  из приложения МЧС в телеграм была очевидной. Перехватил трафик приложения и
+  набросал бота, который, опрашивая МЧСовский эндпоинт, кидает новые уведомления в
+  <a href="https://t.me/mchs31_unofficial" target="_blank">телеграм-канал</a>. Позже по
+  просьбе коллег добавил <a href="https://t.me/mchs31_stats_unofficial" target="_blank">суточный
+  подсчёт статистики</a>.</p>
+  <p>&#9889; <a href="https://github.com/NosefU/gochs2tg_bot" target="_blank">[ Проект на GitHub ]</a></p>
+</td></tr></table>
+
+<!-- ===== PROJ 2 ===== -->
+<table class="card" width="96%"><tr>
+<td class="cardhead">&#9658; Агрегатор сеансов с сайтов кинотеатров</td></tr>
+<tr><td align="center">
+  <img src="assets/img/projects/cinema_scraper.gif" alt="[СКРИН: агрегатор кино]" border="2" style="border:2px solid #00ff00;">
+</td></tr>
+<tr><td>
+  <p>Разбит на два сервиса: сервис скрапинга и сервис вывода информации.</p>
+  <ul>
+    <li><b>Сервис скрапинга</b> &mdash;
+      <a href="https://github.com/NosefU/cinema_aggregator_scraper" target="_blank">[GitHub]</a><br>
+      Скрапинг данных с сайтов кинотеатров через requests, selenium и bs4, сохраняется
+      в БД на PostgreSQL через SQLAlchemy. Консолидация — по открытым данным реестра
+      прокатных удостоверений Министерства Культуры РФ.</li>
+    <li><b>Сервис вывода информации</b> &mdash;
+      <a href="https://github.com/NosefU/cinema_aggregator_backend" target="_blank">[GitHub]</a><br>
+      Django тянет данные из БД и выводит пользователю. Можно выбрать город и дату
+      (GET-параметры). К фронту прикручен Bootstrap.</li>
+  </ul>
+</td></tr></table>
+
+<!-- ===== PROJ 3 ===== -->
+<table class="card" width="96%"><tr>
+<td class="cardhead">&#9658; Chrome-расширение: метки юзерам Pikabu</td></tr>
+<tr><td align="center">
+  <img src="assets/img/projects/pikabu_badges.gif" alt="[СКРИН: pikabu badges 1]" border="2" style="border:2px solid #00ff00;"><br>
+  <img src="assets/img/projects/pikabu_badges2.gif" alt="[СКРИН: pikabu badges 2]" border="2" style="border:2px solid #00ff00;"><br>
+  <img src="assets/img/projects/pikabu_badges3.gif" alt="[СКРИН: pikabu badges 3]" border="2" style="border:2px solid #00ff00;">
+</td></tr>
+<tr><td>
+  <p>Серьёзный недостаток заметок на Пикабу — их нет перед глазами. Метки этого
+  расширения всегда на виду, справа от никнейма или под ним — в профиле, постах и
+  комментариях.</p>
+  <p>Реализовано на чистом JS + CSS, иконки Font Awesome. Метки хранятся на стороне
+  пользователя в chrome.storage.sync (по документации — с автосинхронизацией между
+  браузерами одной учётки Google, но, судя по всему, заработает только после
+  публикации в Chrome Web Store).</p>
+  <p>&#9889; <a href="https://github.com/NosefU/pikabu_badges" target="_blank">[ GitHub ]</a> &nbsp;
+     <a href="https://pikabu.ru/story/rasshirenie_dlya_sozdaniya_zametok_dlya_polzovateley_9152585" target="_blank">[ Больше скриншотов ]</a></p>
+</td></tr></table>
+
+<!-- ===== PROJ 4 ===== -->
+<table class="card" width="96%"><tr>
+<td class="cardhead">&#9658; Проигрыватель музыки на Arduino</td></tr>
+<tr><td>
+  <p>Форкнув проект
+  <a href="https://github.com/Benjamin-Lapointe-Pinel/ArduinoProgrammableSoundGenerator" target="_blank">APSG</a>,
+  я значительно оптимизировал использование PROGMEM для хранения мелодии (только одна
+  из оптимизаций уменьшила размер мелодии на <font color="#ffff00">43,7%</font>). Кроме
+  того, на Python 2 написал скрипт, конвертирующий подготовленные MIDI-файлы в нужный
+  для ардуино формат — упростилась работа над написанием и отладкой мелодий.</p>
+  <p>&#127909; <a href="https://www.youtube.com/watch?v=bedD4nGP4NM" target="_blank">[ Видео на YouTube ]</a>
+     &nbsp; &#9889; <a href="https://github.com/NosefU/ArduinoProgrammableSoundGenerator" target="_blank">[ GitHub ]</a></p>
+</td></tr></table>
+
+<!-- ===== PROJ 5 ===== -->
+<table class="card" width="96%"><tr>
+<td class="cardhead">&#9658; ТГ-бот мониторинга новых коммитов</td></tr>
+<tr><td align="center">
+  <img src="assets/img/projects/git_notifier.gif" alt="[СКРИН: git notifier]" border="2" style="border:2px solid #00ff00;">
+</td></tr>
+<tr><td>
+  <p>В момент начала моего обучения у сервиса был лишь один канал уведомлений —
+  электронная почта. Это было медленно, поэтому я сделал телеграм-бота, который
+  мониторил репозиторий на новые коммиты (для ускорения тянулись только метаданные)
+  и отправлял их мне в Телеграм. Так я узнавал о проверке работы ещё до того, как
+  преподаватель отпишется на платформе.</p>
+  <p>Бот задеплоен на Heroku в феврале 2020 и работал до конца 2022, пока сервис не
+  поменял модель монетизации.</p>
+  <p>&#9889; <a href="https://github.com/NosefU/telegram-commit-notifier" target="_blank">[ GitHub ]</a></p>
+</td></tr></table>
+
+<!-- ===== PROJ 6 ===== -->
+<table class="card" width="96%"><tr>
+<td class="cardhead">&#9658; Переделка таксофона АМТ-69 под сотовую связь</td></tr>
+<tr><td align="center">
+  <img src="assets/img/projects/amt-69-1.gif" alt="[ФОТО: таксофон 1]" border="2" style="border:2px solid #00ff00;"><br>
+  <img src="assets/img/projects/amt-69-2.gif" alt="[ФОТО: таксофон 2]" border="2" style="border:2px solid #00ff00;"><br>
+  <img src="assets/img/projects/amt-69-3.gif" alt="[ФОТО: таксофон 3]" border="2" style="border:2px solid #00ff00;">
+</td></tr>
+<tr><td>
+  <p>С помощью Arduino Nano и модуля SIM900 таксофону АМТ-69 была подарена новая жизнь.
+  Старался сделать всё максимально антуражно:</p>
+  <ul>
+    <li>при входящем вызове звучит «правильный» звонок — тарахтение по колокольчикам;</li>
+    <li>ответ на звонок поднятием трубки, завершение — опусканием на рычаг;</li>
+    <li>входящие и исходящие вызовы работают без нареканий;</li>
+    <li>номера экстренных служб в старом формате (01, 02…) автоматически преобразуются в новый (101, 102…);</li>
+    <li>при поднятии трубки звучит гудок, при наборе — DTMF-сигналы, при окончании — короткие гудки (по стандартам);</li>
+    <li>работа от АКБ 12В.</li>
+  </ul>
+  <p>От монетоприёмника отказался: громоздкий механизм, нет оригинальных жетонов, нет
+  времени переделывать под актуальные деньги.</p>
+  <p><a href="https://pikabu.ru/story/vtoraya_zhizn_taksofona_ili_chem_ya_na_mayskikh_prazdnikakh_zanimalsya_6697044" target="_blank">[ Подробности, фото и видео ]</a></p>
+</td></tr></table>
+
+<!-- ===== PROJ 7 ===== -->
+<table class="card" width="96%"><tr>
+<td class="cardhead">&#9658; Рейкастинг-движок на Pygame <span class="new">(my own DOOM!!!)</span></td></tr>
+<tr><td align="center">
+  <video src="assets/img/projects/raycasting_pygame.webm" width="540" controls="controls">
+    [ твой браузер 1999 года не умеет в video, скачай новее n00b ]
+  </video>
+</td></tr>
+<tr><td>
+  <p>Мне было интересно, каким образом реализованы Wolfenstein-подобные шутеры. Поискав
+  в сети матмодели и примеры, написал свою реализацию — сначала с выводом псевдографики
+  в консоль, а затем с использованием Pygame и текстур.</p>
+  <p>&#9889; <a href="https://github.com/NosefU/3d_fps" target="_blank">[ GitHub ]</a></p>
+</td></tr></table>
+
+<!-- ===== PROJ 8 ===== -->
+<table class="card" width="96%"><tr>
+<td class="cardhead">&#9658; Реверс-инжиниринг камеры дрона DJI Phantom FC40
+  <span class="new"><blink>[I H4CK3D A DR0NE!!1]</blink></span></td></tr>
+<tr><td>
+  <p>Для работы с камерой было доступно лишь приложение для смартфона, которое уже
+  устарело и не работает на актуальных мобильных ОС.</p>
+  <p>Старым смартфоном отловил трафик общения приложения с камерой, анализ — в Wireshark.
+  Протокол не был защищён: набор эндпоинтов, на которые отправлялись HTTP-запросы с
+  командами. Написал скрипт на Python, который инициализировал работу камеры и открывал
+  RTSP-поток для любой программы с поддержкой потокового видео. Скрипт слал статусные
+  сообщения (клиент не отключился) и выводил уровень заряда аккумулятора камеры.</p>
+</td></tr></table>
+
+<!-- ===== PROJ 9 ===== -->
+<table class="card" width="96%"><tr>
+<td class="cardhead">&#9658; Светомузыка для 0x40 hues</td></tr>
+<tr><td align="center">
+  <iframe width="540" height="304" src="https://www.youtube.com/embed/2TVMya3PEEI"
+          title="0x40 hues lights" frameborder="0" allowfullscreen></iframe>
+</td></tr>
+<tr><td>
+  <p>Утилита, собранная в <a href="https://hiasm.com/" target="_blank">HiAsm</a>, брала цвет
+  пикселя с экрана компьютера и передавала по RS232 на Arduino. Контроллер принимал данные
+  и через полевые транзисторы управлял цветом RGB-ленты.</p>
+  <p><a href="https://pikabu.ru/story/kak_ya_svoy_yembilayt_delal_3859071" target="_blank">[ Чуть больше подробностей ]</a></p>
+</td></tr></table>
+
+<center>
+<hr class="retro">
+<font face="Comic Sans MS" color="#ffff00"><blink>l1k3 my h4ck3z?? sign my <a href="guestbook.html" target="_self">GU3STB00K</a>!!!</blink></font>
+<div class="footer">&copy; 1999 NosefU PR0DUCT10NS</div>
+</center>
+
+</div>
+</body>
+</html>

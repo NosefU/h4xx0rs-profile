@@ -1,0 +1,142 @@
+/* ============================================================
+   NoSeFu's H4CK3R Z0N3 -- style.css
+   ============================================================ */
+
+/* ---- общий фон: чёрный + кислотный тайл (заглушка, юзер заменит) ---- */
+body {
+    background-color: #000000;
+    background-image: url("assets/bg/bg-main.gif");
+    color: #00ff41;
+    font-family: "Comic Sans MS", "Courier New", cursive, monospace;
+    font-size: 15px;
+    margin: 6px;
+}
+
+/* ---- фон фрейма меню отдельный ---- */
+body.menu {
+    background-image: url("assets/bg/bg-menu-1.gif");
+    text-align: center;
+}
+
+/* ---- ссылки ---- */
+a        { color: #00ffff; font-weight: bold; }
+a:visited{ color: #ff00ff; }
+a:hover  { color: #000000; background-color: #00ff00; }
+
+/* ---- заголовки ---- */
+h1, h2, h3 {
+    font-family: Impact, "Arial Black", "Comic Sans MS", sans-serif;
+    color: #00ff00;
+    text-shadow: 2px 2px 0 #ff00ff, -1px -1px 0 #ff0000;
+    letter-spacing: 1px;
+    margin: 8px 0;
+}
+h1 { font-size: 34px; color: #ffff00; }
+h2 { font-size: 26px; }
+h3 { font-size: 19px; color: #00ffff; }
+
+/* ---- кодовый текст ---- */
+.code, pre, tt, code {
+    font-family: "Courier New", monospace;
+    color: #00ff41;
+}
+
+pre.ascii {
+    color: #00ff00;
+    text-shadow: 0 0 4px #00ff00;
+    font-size: 11px;
+    line-height: 1.05;
+    text-align: center;
+}
+
+table.card {
+    border: 4px ridge #00ff00;
+    background-color: #0a0a0a;
+    margin: 14px auto;
+    padding: 0;
+}
+table.card td { padding: 10px; }
+
+/* заголовок карточки проекта */
+.cardhead {
+    background-color: #001a00;
+    border-bottom: 2px dashed #ff00ff;
+    color: #00ff00;
+    font-family: Impact, sans-serif;
+    font-size: 18px;
+    padding: 6px;
+}
+
+/* ---- пометка [N3W!] / [0DAY] ---- */
+.new {
+    color: #ff0000;
+    font-family: "Comic Sans MS", cursive;
+    font-weight: bold;
+}
+
+/* ---- ник в leet ---- */
+.leet { color: #00ff00; font-family: "Courier New", monospace; }
+
+/* ---- разделитель ---- */
+hr.retro {
+    border: 0;
+    height: 4px;
+    color: #00ff00;
+    background-color: #00ff00;
+    background-image: url("assets/gif/divider.gif");
+    background-repeat: repeat-x;
+    margin: 12px 0;
+}
+
+/* ---- блок "понты" ---- */
+.brag {
+    color: #ffff00;
+    font-family: "Comic Sans MS", cursive;
+    font-weight: bold;
+}
+
+/* ---- кнопки навигации в меню ---- */
+.navbtn {
+    display: block;
+    margin: 5px 2px;
+    padding: 5px 2px;
+    background-color: #001a00;
+    border: 2px outset #00ff00;
+    color: #00ffff;
+    font-family: "Comic Sans MS", cursive;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+a.navbtn:hover {
+    background-color: #00ff00;
+    color: #000000;
+    border-style: inset;
+}
+
+/* ---- футер ---- */
+.footer {
+    color: #888888;
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+    text-align: center;
+    margin-top: 16px;
+}
+
+/* ---- "статусбар взлома" внизу (fx.js) ---- */
+#hackbar {
+    color: #00ff00;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+}
+
+/* ---- CSS-аналог <blink> на случай если браузер не поддерживает тег ---- */
+blink, .blink { animation: blinker 1s steps(1) infinite; }
+@keyframes blinker { 50% { opacity: 0; } }
+
+/* ---- весь контент по центру и не шире ~780px (вайб 800x600) ---- */
+.wrap {
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: left;
+}
