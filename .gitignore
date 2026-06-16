@@ -105,3 +105,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+
+# JetBrains project dir
+.idea/
