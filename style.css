@@ -86,7 +86,7 @@ hr.retro {
     color: #00ff00;
     background-color: #00ff00;
     background-image: url("assets/gif/divider.gif");
-    background-repeat: repeat-x;
+    background-repeat: round;
     margin: 12px 0;
 }
 
